@@ -1,0 +1,13 @@
+#contact a {
+  color: var(--color4);
+  border-bottom: solid 2px var(--color4);
+}
+
+#contact:hover a {
+  border-bottom: transparent;
+}
+
+#contact2 a {
+  color: var(--color4) !important;
+  border-bottom: solid 2px var(--color4);
+}
