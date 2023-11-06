@@ -1,0 +1,393 @@
+@font-face {
+  font-family: "BadScript";
+  src: url(./assets/fonts/BadScript-Regular.ttf);
+}
+:root {
+  --color1: #fffcf2;
+  --color2: #bb2649;
+  --color3: #191919;
+  /******chosen*************/
+  --color4: #ffc43d;
+  --color5: #06d6a0;
+  --color6: #4d4949;
+  --color7: #1b9aaa;
+  --color8: #ef476f;
+
+  --gradientA0: linear-gradient(90deg, #1b9aaa 0%, #d1f0f4 90%);
+  --gradientA1: linear-gradient(135deg, #1b9aaa 0%, #d1f0f4 90%);
+  --gradientA2: linear-gradient(180deg, #ef476f 0%, #1b9aaa 80%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "BadScript", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  min-height: 100vh;
+  color: var(--color6);
+  background-image: url(./assets/images/background/background2.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content {
+  width: 90vw;
+  margin: auto;
+}
+
+.banner {
+  background-image: url(./assets/images/banner/B41a.png);
+  background-position: center;
+  background-size: cover;
+  height: 54px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.menu {
+  position: fixed;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 52px;
+  width: 100vw;
+  height: 45px;
+  background: var(--color7);
+  z-index: 500;
+}
+
+.changeColor {
+  position: relative;
+  font-size: 1.6rem;
+  width: 15%;
+  min-width: 150px;
+  height: 54px;
+  color: var(--color4);
+  pointer-events: none;
+}
+
+.changeColor span {
+  position: absolute;
+  opacity: 0;
+}
+
+#g {
+  left: 30px;
+}
+
+#r {
+  left: 46px;
+}
+#a1 {
+  left: 54px;
+}
+
+#p {
+  left: 65px;
+}
+
+#h {
+  left: 75px;
+}
+
+#y {
+  left: 86px;
+}
+
+#s1 {
+  left: 97px;
+}
+
+#a2 {
+  left: 105px;
+}
+
+#l {
+  left: 116px;
+}
+
+#i {
+  left: 123px;
+}
+
+#s2 {
+  left: 127px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 54px;
+}
+
+.menu ul li a {
+  color: var(--color1);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.menu ul li:hover {
+  border-bottom: 2px solid var(--color4);
+}
+
+.menu ul li:hover a {
+  color: var(--color4);
+}
+
+.menu h6 {
+  position: absolute;
+  color: var(--color4);
+  font-size: 0.8rem;
+  top: 0;
+  left: 17px;
+}
+
+#side-bar {
+  display: none;
+  position: absolute;
+  transition: 0.5s ease;
+  width: 100px;
+  height: 100vh;
+  background: var(--color7);
+  top: 95px;
+  left: -100px;
+  z-index: 20;
+}
+
+#btn {
+  position: absolute;
+  top: 18px;
+  left: 5px;
+  cursor: pointer;
+  height: auto;
+  width: 50px;
+  background-color: transparent;
+  z-index: 150;
+}
+
+#btn span {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: var(--color1);
+  border-radius: 50%;
+  margin: 3px;
+  transition: 0.3s ease;
+}
+
+#side-bar.active {
+  left: 0px;
+}
+
+.arrow1 {
+  padding-top: 10px;
+}
+
+.arrow1 img {
+  width: 45px;
+  height: auto;
+}
+
+.arrow2 img {
+  margin-left: 20px;
+  margin-top: 40px;
+  width: 45px;
+  height: auto;
+}
+
+.arrow3 {
+  display: none;
+}
+
+#btn.cross span {
+  position: absolute; /*pour mettre les 3 span au meme niveau*/
+  top: 10px;
+}
+#btn.cross span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+#btn.cross span:nth-child(2) {
+  opacity: 0;
+}
+
+#btn.cross span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/*si class active injecté alors (~) son frere :   */
+.active ~ .content {
+  opacity: 0.5;
+}
+
+#side-bar ul li {
+  padding-left: 15px;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+
+#side-bar ul li a {
+  color: var(--color1);
+  font-size: 1.2rem;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+footer {
+  height: 100px;
+  display: block;
+  background: var(--gradientA1);
+  margin-top: 25px;
+}
+
+.reseaux1 {
+  margin: auto;
+  width: 30%;
+  min-width: 220px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reseaux1 a {
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+#fb {
+  background-image: url("./assets/images/logos/logo-fb.png");
+}
+#fb:hover {
+  background-image: url("./assets/images/logos/logo-fb2.png");
+}
+#linkedin {
+  background-image: url("./assets/images/logos/logo-linkedin.png");
+}
+#linkedin:hover {
+  background-image: url("./assets/images/logos/logo-linkedin2.png");
+}
+#tw {
+  background-image: url("./assets/images/logos/logo-twitter.png");
+}
+#tw:hover {
+  background-image: url("./assets/images/logos/logo-twitter2.png");
+}
+
+#insta {
+  background-image: url("./assets/images/logos/logo-insta.png");
+}
+#insta:hover {
+  background-image: url("./assets/images/logos/logo-insta2.png");
+}
+
+#fb2 {
+  background-image: url("./assets/images/logos/logo-fb3.png");
+}
+#fb2:hover {
+  background-image: url("./assets/images/logos/logo-fb4.png");
+}
+#linkedin2 {
+  background-image: url("./assets/images/logos/logo-linkedin3.png");
+}
+#linkedin2:hover {
+  background-image: url("./assets/images/logos/logo-linkedin4.png");
+}
+#tw2 {
+  background-image: url("./assets/images/logos/logo-twitter3.png");
+}
+#tw2:hover {
+  background-image: url("./assets/images/logos/logo-twitter4.png");
+}
+
+#insta2 {
+  background-image: url("./assets/images/logos/logo-insta3.png");
+}
+#insta2:hover {
+  background-image: url("./assets/images/logos/logo-insta4.png");
+}
+
+/**************************MEDIAS*******************/
+@media screen and (max-width: 1000px) {
+  body {
+    background-position: left;
+  }
+}
+@media screen and (max-width: 550px) {
+  .banner {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+  .menu ul {
+    display: none;
+  }
+
+  .arrow3 {
+    display: flex;
+    position: fixed;
+    top: 95%;
+    margin-left: 80%;
+    width: fit-content;
+    z-index: 550;
+    opacity: 0;
+    transition: 0.3s 0.2s ease-in;
+  }
+
+  .arrow3 a img {
+    width: 45px;
+    height: auto;
+  }
+
+  .menu h2 {
+    width: 50%;
+  }
+
+  .changeColor {
+    left: -50px;
+  }
+
+  #side-bar {
+    display: block;
+    position: fixed;
+  }
+}
+@media screen and (max-width: 370px) {
+  .changeColor {
+    left: -18px;
+  }
+}
+
+@media screen and (min-width: 551px) {
+  #btn {
+    display: none;
+  }
+
+  .menu h6 {
+    display: none;
+  }
+  .currentPage {
+    display: none;
+  }
+}
