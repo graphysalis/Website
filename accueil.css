@@ -1,0 +1,465 @@
+#accueil a {
+  color: var(--color4);
+  border-bottom: solid 2px var(--color4);
+}
+
+#accueil:hover a {
+  border-bottom: transparent;
+}
+
+#accueil2 a {
+  color: var(--color4) !important;
+  border-bottom: solid 2px var(--color4);
+}
+.welcomeBox {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+}
+
+.bienvenue {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: center;
+  color: var(--color7);
+  opacity: 0;
+  margin-top: 30px;
+  transform: translateX(-400px);
+  transition: 1s ease-in;
+}
+
+.presentation {
+  transform: translateX(-200px);
+  opacity: 0;
+  margin: 20px auto;
+  transition: 0.8s 0.2s ease-in;
+  text-align: center;
+  height: 100px;
+  font-size: 1rem;
+}
+
+#webPrint {
+  color: transparent;
+  animation: webPrint 1s 0.8s ease-in infinite;
+}
+
+.linksBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.linkBox {
+  width: fit-content;
+  height: fit-content;
+  padding: 0 10px;
+  margin-top: 25px;
+  text-align: center;
+  border-radius: 45px;
+  transform: rotateZ(-5deg);
+  transition: 0.3s ease-in-out;
+}
+.linkBox:hover {
+  transform: rotateZ(0deg);
+  transform: scale(1.2);
+}
+
+.linkBox span {
+  opacity: 0;
+}
+#link1 a {
+  color: var(--color7);
+}
+#link2 a {
+  color: var(--color8);
+}
+#link3 a {
+  color: var(--color4);
+}
+#link4 a {
+  color: var(--color5);
+}
+#link1 span {
+  color: var(--color7);
+}
+#link2 span {
+  color: var(--color8);
+}
+#link3 span {
+  color: var(--color4);
+}
+#link4 span {
+  color: var(--color5);
+}
+
+.linkBox span:nth-child(1) {
+  animation: opAnim 1s 0.25s infinite ease-in;
+}
+.linkBox span:nth-child(2) {
+  animation: opAnim 1s 0.5s infinite ease-in;
+}
+.linkBox span:nth-child(3) {
+  animation: opAnim 1s 0.75s infinite ease-in;
+}
+
+.box {
+  display: flex;
+  width: 70%;
+  height: fit-content;
+  margin: 35px auto;
+  padding-top: 65px;
+}
+
+#visId,
+#logo,
+#charte,
+#web {
+  opacity: 0.2;
+  transition: 0.5s 0.2s ease-in;
+}
+
+.line1,
+.line2 {
+  position: absolute;
+  transition: 0.8s 0.5s ease-in;
+}
+
+#visId .line1 {
+  top: 25px;
+  left: 145px;
+  width: 0px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#visId .line2 {
+  top: 40px;
+  left: 3px;
+  width: 2px;
+  height: 0px;
+  background: linear-gradient(
+    180deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#logo .line1 {
+  top: 25px;
+  left: 150px;
+  width: 0px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#logo .line2 {
+  top: 40px;
+  left: 3px;
+  width: 2px;
+  height: 0px;
+  background: linear-gradient(
+    180deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#charte .line1 {
+  top: 25px;
+  left: 156px;
+  width: 0px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#charte .line2 {
+  top: 40px;
+  left: 3px;
+  width: 2px;
+  height: 0px;
+  background: linear-gradient(
+    180deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#web .line1 {
+  top: 25px;
+  left: 115px;
+  width: 0px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#web .line2 {
+  top: 40px;
+  left: 3px;
+  width: 2px;
+  height: 0px;
+  background: linear-gradient(
+    180deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+.text {
+  position: relative;
+  width: 50%;
+  color: var(--color6);
+}
+
+.text h3 span:nth-child(1) {
+  padding-left: 10px;
+}
+.text h3 span:nth-child(2) {
+  padding-left: 20px;
+}
+.text h3 span:nth-child(3) {
+  padding-left: 30px;
+}
+
+.text p {
+  text-align: justify;
+  padding: 0 15px;
+  font-weight: lighter;
+}
+
+.text ul li {
+  padding-left: 25px;
+}
+
+.text ul li::before {
+  content: "\2756";
+  color: var(--color6);
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.pic {
+  width: 50%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.two {
+  margin: auto;
+  width: 160px;
+  transform: rotateZ(5deg);
+  transition: 0.3s 0.1s;
+  animation: borderAnim 0.7s ease-in-out alternate infinite;
+}
+
+.two a {
+  color: var(--color7);
+}
+
+.two:hover {
+  transform: scale(1.2);
+  animation-play-state: paused;
+}
+
+#visId .pic {
+  background-image: url("./assets/images/IdVisuelle/png/CV01.png");
+}
+
+#logo .pic {
+  background-image: url("./assets/images/logos/graphysalis/logo-black.png");
+}
+
+#charte .pic {
+  background-image: url("./assets/images/IdVisuelle/charte01.jpg");
+}
+
+#web .pic {
+  background-image: url("./assets/images/website/web01.png");
+}
+
+#perso {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#visId h2 {
+  color: var(--color7);
+}
+
+#logo h2 {
+  color: var(--color8);
+}
+
+#charte h2 {
+  color: var(--color4);
+}
+#web h2 {
+  color: var(--color5);
+}
+
+#perso h2 {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 200px;
+}
+
+#perso h2::before {
+  content: "";
+  transform: translateX(-50%);
+  position: absolute;
+  top: 24px;
+  left: -10px;
+  height: 2px;
+  width: 60px;
+  animation: stretchLine 0.5s 2.3s ease-in forwards;
+  background: linear-gradient(
+    -90deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#perso h2::after {
+  content: "";
+  transform: translateX(-50%);
+  position: absolute;
+  top: 24px;
+  right: -65px;
+  height: 2px;
+  width: 60px;
+  animation: stretchLine 0.5s 2.3s ease-in forwards;
+  background: linear-gradient(
+    90deg,
+    rgb(95, 221, 175, 1) 0%,
+    rgb(249, 184, 32) 25%,
+    rgb(197, 40, 100) 50%,
+    rgb(64, 158, 202) 75%,
+    rgba(221, 153, 187, 0) 100%
+  );
+}
+
+#perso p {
+  text-align: justify;
+  font-weight: lighter;
+  width: 70%;
+  margin: auto;
+}
+
+#perso h3 {
+  color: var(--color8);
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/*******medias***********************/
+@media screen and (max-width: 1000px) {
+  .box {
+    display: block;
+    width: 90%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .pic {
+    width: auto;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .linksBox {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .presentation {
+    width: 80%;
+    margin: auto;
+  }
+  .linksBox {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .presentation {
+    font-size: 0.7rem;
+  }
+
+  .linksBox {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .linksBox {
+    margin-top: 70px;
+  }
+  .linkBox {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-height: 700px) and (min-width: 700px) {
+  .presentation {
+    margin-top: 80px;
+  }
+  .linksBox {
+    display: block;
+    width: 200px;
+  }
+}
