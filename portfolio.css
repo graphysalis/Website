@@ -1,0 +1,276 @@
+body {
+  background-image: none;
+}
+
+#portfolio a {
+  color: var(--color4);
+  border-bottom: solid 2px var(--color4);
+}
+#portfolio:hover a {
+  border-bottom: transparent;
+}
+
+#portfolio2 a {
+  color: var(--color4) !important;
+  border-bottom: solid 2px var(--color4);
+}
+
+.puzzle {
+  position: relative;
+  width: 249px;
+  height: 175px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 90px;
+}
+.puzzleImg {
+  position: absolute;
+  width: 249px;
+  height: 175px;
+  background-size: cover;
+  background-position: center;
+}
+
+#topLeft {
+  background-image: url("./assets/images/puzzle/topLeft.png");
+  top: -400px;
+  left: -550px;
+  transform: rotateZ(-280deg);
+  opacity: 0;
+  transition: 2s 0.2s ease-in;
+}
+
+#topRight {
+  background-image: url("./assets/images/puzzle/topRight.png");
+  top: -400px;
+  left: 550px;
+  transform: rotateZ(280deg);
+  opacity: 0;
+  transition: 2s 0.7s ease-in;
+}
+
+#bottomLeft {
+  background-image: url("./assets/images/puzzle/bottomLeft.png");
+  top: 400px;
+  left: -550px;
+  transform: rotateZ(-280deg);
+  opacity: 0;
+  transition: 2s 1.2s ease-in;
+}
+
+#bottomRight {
+  background-image: url("./assets/images/puzzle/bottomRight.png");
+  top: 400px;
+  left: 550px;
+  transform: rotateZ(280deg);
+  opacity: 0;
+  transition: 2s 1.7s ease-in;
+}
+
+#middle {
+  background-image: url("./assets/images/puzzle/middle.png");
+  transform: scale(2);
+  opacity: 0;
+  transition: 1s 3s ease-in;
+}
+
+.welcomeBox {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+}
+
+.presentation {
+  transform: translateX(-200px);
+  opacity: 0;
+  margin: auto;
+  transition: 0.8s 0.2s ease-in;
+  text-align: center;
+  height: 70px;
+  font-size: 1rem;
+}
+
+.linksBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.linkBox {
+  width: fit-content;
+  height: fit-content;
+  transform: rotateZ(-5deg);
+  transition: 0.3s ease-in-out;
+}
+
+.linkBox:hover {
+  transform: rotateZ(0deg);
+  transform: scale(1.2);
+}
+
+.linkBox span {
+  opacity: 0;
+}
+
+#link1 a {
+  color: var(--color5);
+}
+#link2 a {
+  color: var(--color8);
+}
+#link3 a {
+  color: var(--color4);
+}
+#link4 a {
+  color: var(--color7);
+}
+#link1 span {
+  color: var(--color5);
+}
+#link2 span {
+  color: var(--color8);
+}
+#link3 span {
+  color: var(--color4);
+}
+#link4 span {
+  color: var(--color7);
+}
+
+.linkBox span:nth-child(1) {
+  animation: opAnim 1s 0.25s infinite ease-in;
+}
+.linkBox span:nth-child(2) {
+  animation: opAnim 1s 0.5s infinite ease-in;
+}
+.linkBox span:nth-child(3) {
+  animation: opAnim 1s 0.75s infinite ease-in;
+}
+
+.box {
+  height: 250px;
+  width: 70%;
+  margin: 5px auto;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#clicCard {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#cv {
+  position: relative;
+  width: 301px;
+  height: 195px;
+}
+
+.cv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: 1s ease-in;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+
+#cv01 {
+  background-image: url("./assets/images/IdVisuelle/cv01.jpg");
+  z-index: 10;
+}
+
+#cv02 {
+  background-image: url("./assets/images/IdVisuelle/cv02.jpg");
+  z-index: 10;
+}
+
+#cv03 {
+  background-image: url("./assets/images/IdVisuelle/cv03.jpg");
+  z-index: 10;
+}
+
+#cv04 {
+  background-image: url("./assets/images/IdVisuelle/cv04.jpg");
+  z-index: 10;
+}
+
+#cv05 {
+  background-image: url("./assets/images/IdVisuelle/cv05.jpg");
+  z-index: 10;
+}
+
+#cv06 {
+  background-image: url("./assets/images/IdVisuelle/cv06.jpg");
+  z-index: 10;
+}
+
+#cv07 {
+  background-image: url("./assets/images/IdVisuelle/cv07.jpg");
+  z-index: 10;
+}
+
+#cv08 {
+  background-image: url("./assets/images/IdVisuelle/cv08.jpg");
+  z-index: 10;
+}
+
+#cv09 {
+  background-image: url("./assets/images/IdVisuelle/cv09.jpg");
+  z-index: 10;
+}
+
+#cv10 {
+  background-image: url("./assets/images/IdVisuelle/cv10.jpg");
+  z-index: 9;
+}
+
+@media screen and (max-width: 800px) {
+  .linksBox {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+  }
+  .linkBox {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .presentation {
+    width: 80%;
+  }
+  .linksBox {
+    margin-top: 100px;
+  }
+
+  .puzzle {
+    top: 150px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .presentation {
+    font-size: 0.7rem;
+  }
+
+  .linksBox {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #cv {
+    width: 180px;
+    height: 116px;
+  }
+}
