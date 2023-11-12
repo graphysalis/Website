@@ -34,16 +34,16 @@ window.addEventListener("scroll", () => {
   var posBox3 = charte.getBoundingClientRect();
   var posBox4 = web.getBoundingClientRect();
 
-  if (posBox1.y <= hauteur / 2) {
+  if (posBox1.y <= hauteur / 1.5) {
     visId.style.opacity = 1;
     visIdLine1.style.width = "50px";
-    visIdLine2.style.height = "300px";
+    visIdLine2.style.height = "100px";
   } else {
     visId.style.opacity = 0.2;
     visIdLine1.style.width = "0px";
     visIdLine2.style.height = "0px";
   }
-  if (posBox2.y <= hauteur / 2) {
+  if (posBox2.y <= hauteur / 1.5) {
     logo.style.opacity = 1;
     logoLine1.style.width = "50px";
     logoLine2.style.height = "100px";
@@ -53,19 +53,19 @@ window.addEventListener("scroll", () => {
     logoLine2.style.height = "0px";
   }
 
-  if (posBox3.y <= hauteur / 2) {
+  if (posBox3.y <= hauteur / 1.5) {
     charte.style.opacity = 1;
     charteLine1.style.width = "50px";
-    charteLine2.style.height = "420px";
+    charteLine2.style.height = "100px";
   } else {
     charte.style.opacity = 0.2;
     charteLine1.style.width = "0px";
     charteLine2.style.height = "0px";
   }
-  if (posBox4.y <= hauteur / 2) {
+  if (posBox4.y <= hauteur / 1.5) {
     web.style.opacity = 1;
     webLine1.style.width = "50px";
-    webLine2.style.height = "300px";
+    webLine2.style.height = "100px";
   } else {
     web.style.opacity = 0.2;
     webLine1.style.width = "0px";
