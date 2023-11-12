@@ -3,6 +3,14 @@ const bienvenue = document.querySelector(".bienvenue");
 const btnCard = document.querySelector(".btnCard");
 const puzzle = document.querySelector(".puzzleImg");
 
+setTimeout(() => {
+  document.body.style.backgroundImage =
+    "url(./assets/images/background/background1.jpg)";
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundAttachment = "fixed";
+}, 4000);
+
 var puzzleImg = document.querySelectorAll(".puzzleImg");
 
 puzzleImg.forEach((puzzleImg) => {
@@ -15,12 +23,6 @@ puzzleImg.forEach((puzzleImg) => {
   presentation.style.opacity = 1;
   presentation.style.transform = "none";
 });
-
-//apparition background 10s après le load
-setTimeout(() => {
-  document.body.style.backgroundImage =
-    "url('./assets/images/background/background2.png')";
-}, 4000);
 
 /*****changement de carte au click****************************/
 
