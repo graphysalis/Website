@@ -51,9 +51,6 @@
     textanim2 0.5s 2s ease-in-out;
 }
 /**************************/
-.currentPage {
-  animation: textanim3 1.5s 1s ease-in-out forwards;
-}
 
 @keyframes textanim1 {
   0% {
@@ -72,31 +69,19 @@
 }
 
 @keyframes textanim3 {
-  0% {
-    color: var(--color8);
-  }
-  90% {
-    color: var(--color8);
+  50% {
+    color: var(--color7);
   }
   100% {
+    left: 95%;
     color: var(--color1);
     opacity: 1;
-    left: 90%;
-    top: 12px;
-    font-size: 1.3rem;
-    font-weight: lighter;
   }
 }
 
 @keyframes opAnim {
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes webPrint {
-  100% {
-    color: var(--color8);
   }
 }
 
