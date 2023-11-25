@@ -1,0 +1,65 @@
+.cgv,
+.mentions {
+  width: 80%;
+  margin: auto;
+  background-color: #191919f3;
+  user-select: none;
+  padding-bottom: 60px;
+}
+
+.cgvmlLink {
+  width: 100%;
+  text-align: right;
+}
+
+h4 {
+  font-size: 0.8rem;
+  height: 30px;
+  color: var(--color1);
+  font-style: oblique;
+  margin-right: 10px;
+}
+
+h4 span {
+  border-bottom: 1px solid var(--color8);
+  color: var(--color8);
+}
+
+.cgv h1,
+.mentions h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color4);
+}
+
+.cgv h2,
+.mentions h2 {
+  color: var(--color7);
+  font-size: 1.2rem;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+
+.cgv h3,
+.mentions h3 {
+  text-decoration: underline;
+  width: 70%;
+  margin: auto;
+  padding: 20px 0 0 0;
+}
+
+.cgv p,
+.mentions p {
+  color: var(--color1);
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+}
+.dotcgv li {
+  font-size: 0.8rem;
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}
