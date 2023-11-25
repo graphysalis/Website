@@ -1,20 +1,80 @@
 #accueil a {
   color: var(--color4);
-  border-bottom: solid 2px var(--color4);
-}
-
-#accueil:hover a {
-  border-bottom: transparent;
+  font-size: 0.8rem;
 }
 
 #accueil2 a {
-  color: var(--color4) !important;
-  border-bottom: solid 2px var(--color4);
+  color: var(--color3) !important;
+  background-color: var(--color4);
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 0.8rem !important;
 }
+
+/*************** sous-menu navbar***********/
+.blackLine {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100vw;
+  height: 24px;
+  background-color: var(--color3);
+}
+
+.linksBox {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 43px;
+  width: 100vw;
+  z-index: 500;
+  transition: 0.5s ease;
+  justify-content: center;
+}
+
+.linksBox .linkBox {
+  width: fit-content;
+  height: fit-content;
+  padding: 0 15px 0 5px;
+  font-size: 0.8rem;
+  background-color: var(--color3);
+}
+
+.linkBox:hover a {
+  color: var(--color1) !important;
+}
+
+.linkBox span {
+  opacity: 0;
+}
+#link1 a {
+  color: var(--color7);
+}
+#link2 a {
+  color: var(--color8);
+}
+#link3 a {
+  color: var(--color4);
+}
+#link4 a {
+  color: var(--color5);
+}
+
+.linkBox span:nth-child(1) {
+  animation: opAnim 1s 0.25s infinite ease-in;
+}
+.linkBox span:nth-child(2) {
+  animation: opAnim 1s 0.5s infinite ease-in;
+}
+.linkBox span:nth-child(3) {
+  animation: opAnim 1s 0.75s infinite ease-in;
+}
+/********************/
+
 .welcomeBox {
   width: 100%;
   height: fit-content;
-  margin: auto;
+  margin-top: 150px;
   padding-bottom: 30px;
   background-image: url("./assets/images/background/background3a.png");
   background-position: center;
@@ -47,67 +107,6 @@
   animation: textanim2 1s 0.8s ease-in infinite;
 }
 
-.linksBox {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  margin: auto;
-  padding: 10px 25px 25px 25px;
-}
-
-.linkBox {
-  width: fit-content;
-  height: fit-content;
-  padding: 0 10px;
-  margin-top: 25px;
-  text-align: center;
-  transform: rotateZ(-15deg);
-  transition: 0.3s ease-in-out;
-}
-.linkBox:hover {
-  transform: rotateZ(0deg);
-  transform: scale(1.2);
-}
-
-.linkBox span {
-  opacity: 0;
-}
-#link1 a {
-  color: var(--color7);
-}
-#link2 a {
-  color: var(--color8);
-}
-#link3 a {
-  color: var(--color4);
-}
-#link4 a {
-  color: var(--color5);
-}
-#link1 span {
-  color: var(--color7);
-}
-#link2 span {
-  color: var(--color8);
-}
-#link3 span {
-  color: var(--color4);
-}
-#link4 span {
-  color: var(--color5);
-}
-
-.linkBox span:nth-child(1) {
-  animation: opAnim 1s 0.25s infinite ease-in;
-}
-.linkBox span:nth-child(2) {
-  animation: opAnim 1s 0.5s infinite ease-in;
-}
-.linkBox span:nth-child(3) {
-  animation: opAnim 1s 0.75s infinite ease-in;
-}
-
 .box {
   display: block;
   width: 80%;
@@ -117,6 +116,14 @@
   background-image: url("./assets/images/background/background3a.png");
   background-position: left;
   background-size: cover;
+}
+
+#visIdLink,
+#logoLink,
+#charteLink,
+#webLink {
+  height: 2px;
+  width: 100%;
 }
 
 #visId,
@@ -310,13 +317,14 @@
 
 .pic {
   width: 100%;
-  height: 200px;
+  height: auto;
   text-align: center;
 }
 
 .two {
   margin: auto;
   width: 160px;
+  text-align: center;
   transform: rotateZ(5deg);
   transition: 0.3s 0.1s;
   animation: borderAnim 0.7s ease-in-out alternate infinite;
@@ -341,7 +349,7 @@
   height: auto;
 }
 
-/*******retournement charte .pic***/
+/******* retournement charte .pic au "hover" ***/
 #picMove {
   height: 250px;
   background-color: transparent;
@@ -376,13 +384,55 @@
   width: 175px;
   height: 250px;
 }
-
 /*********/
-#web .pic img {
-  width: 200px;
-  height: auto;
+/*********defilement image #web ***********/
+#imgDefile {
+  width: 300px;
+  height: 215px;
+  margin: auto;
 }
 
+.screen {
+  position: relative;
+  width: 300px;
+  height: 215px;
+  background-image: url("./assets/images/website/screenEmpty.png");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#imgPlace {
+  position: absolute;
+  width: 300px;
+  height: 215px;
+  top: 0;
+  left: 0;
+  transition: 0.5s 02s ease-in-out;
+}
+
+.pauseDefile {
+  background-image: url("./assets/images/website/btnStop.png");
+  visibility: visible;
+}
+
+.playDefile {
+  background-image: url("./assets/images/website/btnPlay.png");
+  visibility: hidden;
+}
+.playDefile,
+.pauseDefile {
+  position: absolute;
+  width: 90px;
+  height: 28px;
+  top: 155px;
+  right: 102px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/**********************/
 #visId h2 {
   color: var(--color7);
 }
@@ -467,21 +517,11 @@
 }
 
 /*******medias***********************/
-@media screen and (max-width: 800px) {
-  .linksBox {
-    display: block;
-    width: fit-content;
-    margin: auto;
-  }
-}
 
 @media screen and (max-width: 730px) {
   .presentation {
     width: 80%;
     margin: auto;
-  }
-  .linksBox {
-    margin-top: 80px;
   }
 }
 
@@ -489,27 +529,10 @@
   .presentation {
     font-size: 0.7rem;
   }
-
-  .linksBox {
-    margin-top: 40px;
-  }
-}
-
-@media screen and (min-height: 700px) {
-  .linksBox {
-    margin-top: 70px;
-  }
-  .linkBox {
-    margin-top: 50px;
-  }
 }
 
 @media screen and (min-height: 700px) and (min-width: 700px) {
   .presentation {
     margin-top: 80px;
-  }
-  .linksBox {
-    display: block;
-    width: 200px;
   }
 }
