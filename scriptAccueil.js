@@ -72,3 +72,43 @@ window.addEventListener("scroll", () => {
     webLine2.style.height = "0px";
   }
 });
+
+/**********  défilement img #web *****/
+var images = new Array();
+images = [
+  "./assets/images/website/01.png",
+  "./assets/images/website/02.png",
+  "./assets/images/website/03.png",
+  "./assets/images/website/04.png",
+];
+const pauseDefile = document.querySelector(".pauseDefile");
+const playDefile = document.querySelector(".playDefile");
+
+var index = 0;
+
+function changeImage() {
+  imgPlace.src = images[index];
+  if (index < images.length - 1) {
+    index++;
+  } else {
+    index = 0;
+  }
+  timerDefile = setTimeout(changeImage, 2500);
+}
+
+// déclencher la fonction "onload" :
+window.addEventListener("load", () => {
+  changeImage();
+});
+// puis déclencher/stopper la fonction sur "play":
+pauseDefile.addEventListener("click", () => {
+  clearTimeout(timerDefile);
+  playDefile.style.visibility = "visible";
+  pauseDefile.style.visibility = "hidden";
+});
+
+playDefile.addEventListener("click", () => {
+  changeImage();
+  pauseDefile.style.visibility = "visible";
+  playDefile.style.visibility = "hidden";
+});
