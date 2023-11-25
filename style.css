@@ -39,7 +39,7 @@ body {
   font-weight: bolder;
   min-height: 100vh;
   color: var(--color1);
-  background-image: url(./assets/images/background/background1.jpg);
+  background-image: url(./assets/images/background/background1b.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -69,6 +69,8 @@ body {
   height: 45px;
   background: var(--color3);
   z-index: 500;
+  border-bottom: 1px solid;
+  border-color: var(--color4);
 }
 
 .changeColor {
@@ -143,10 +145,6 @@ body {
   letter-spacing: 2px;
 }
 
-.menu ul li:hover {
-  border-bottom: 2px solid var(--color4);
-}
-
 .menu ul li:hover a {
   color: var(--color4);
 }
@@ -172,11 +170,11 @@ body {
   display: none;
   position: absolute;
   transition: 0.5s ease;
-  width: 100px;
+  width: 150px;
   height: 100vh;
   background: var(--color3);
   top: 95px;
-  left: -100px;
+  left: -150px;
   z-index: 20;
 }
 
@@ -203,24 +201,8 @@ body {
 #side-bar.active {
   left: 0px;
 }
-
-.arrow1 {
-  padding-top: 10px;
-}
-
-.arrow1 img {
-  width: 45px;
-  height: auto;
-}
-
-.arrow2 img {
-  margin-left: 20px;
-  margin-top: 40px;
-  width: 45px;
-  height: auto;
-}
 .arrow3 {
-  display: flex;
+  display: none;
   position: fixed;
   bottom: 0px;
   width: 100%;
@@ -277,20 +259,78 @@ body {
   cursor: pointer;
 }
 
-footer {
-  height: 140px;
+/*************** sous-menu sideBar ***********/
+.linksBox2 {
   display: block;
+  transition: 0.5s ease;
+}
+
+.linkBox2 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 0.8rem;
+  padding: 15px 0 0 30px;
+}
+
+.linkBox2 span {
+  opacity: 0;
+}
+#sideBarLink1 a {
+  color: var(--color7);
+}
+#sideBarLink2 a {
+  color: var(--color8);
+}
+#sideBarLink3 a {
+  color: var(--color4);
+}
+#sideBarLink4 a {
+  color: var(--color5);
+}
+
+.linkBox2 span:nth-child(1) {
+  animation: opAnim 1s 0.25s infinite ease-in;
+}
+.linkBox2 span:nth-child(2) {
+  animation: opAnim 1s 0.5s infinite ease-in;
+}
+.linkBox2 span:nth-child(3) {
+  animation: opAnim 1s 0.75s infinite ease-in;
+}
+/********************/
+
+footer {
   background: var(--color3);
   margin-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  height: fit-content;
+}
+.cgvmlReseauxBox {
+  display: flex;
+  width: 100%;
+}
+
+.cgvmlBox {
+  width: 50%;
+  height: fit-content;
+}
+
+.cgvmlLink2 {
+  width: fit-content;
+  padding-left: 50px;
+}
+.cgvmlLink2 a {
+  color: var(--color1);
+  font-size: 1rem;
 }
 
 .reseaux1 {
-  margin: auto;
-  width: 30%;
-  min-width: 220px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 50%;
+  height: fit-content;
+  min-width: 220px;
+  justify-content: center;
 }
 
 .reseaux1 a {
@@ -298,7 +338,7 @@ footer {
   width: 40px;
   background-size: cover;
   background-position: center;
-  margin-top: 20px;
+  margin: 15px;
 }
 
 #fb {
@@ -353,6 +393,17 @@ footer {
   background-image: url("./assets/images/logos/logo-insta4.png");
 }
 
+.copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 0.7rem;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
 /**************************MEDIAS*******************/
 @media screen and (max-width: 550px) {
   .banner {
@@ -362,10 +413,6 @@ footer {
   }
   .menu ul {
     display: none;
-  }
-
-  .arrow3 {
-    display: flex;
   }
   .menu h2 {
     width: 50%;
@@ -379,7 +426,33 @@ footer {
     display: block;
     position: fixed;
   }
+
+  .blackLine {
+    display: none;
+  }
+
+  .cgvmlReseauxBox {
+    display: block;
+  }
+
+  .cgvmlBox {
+    width: 80%;
+    margin: auto;
+  }
+
+  .cgvmlLink2 {
+    margin: auto;
+    padding-left: 0px;
+  }
+
+  .reseaux1 {
+    width: 70%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
 }
+
 @media screen and (max-width: 370px) {
   .changeColor {
     left: -18px;
