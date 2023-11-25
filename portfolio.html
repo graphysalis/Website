@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <title>GRAPHYSALIS | Webdesigner/Développeur | Portfolio</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graphysalis- Bienvenue!</title>
+    <meta
+      name="keywords"
+      content="webdesigner, site web, logo, cartes de visite, plaquettes, packaging, realisations graphiques, branding"
+    />
+    <meta
+      name="description"
+      content="Besoin d'un developpeur et graphiste web? Venez découvrir mes différentes réalisations web et print"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -19,6 +28,7 @@
     <header>
       <div class="banner">
         <nav class="menu">
+          <div class="blackLine"></div>
           <h6>Menu</h6>
           <div id="btn">
             <span></span>
@@ -41,13 +51,30 @@
           </div>
           <ul>
             <li id="accueil"><a href="index.html">ACCUEIL</a></li>
-            <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
+            <li id="portfolio">
+              <a href="portfolio.html">PORTFOLIO</a>
+              <div class="linksBox">
+                <div class="linkBox" id="link1">
+                  <a href="portfolio.html#webLink"
+                    >Site Internet <span>&#10095;</span><span>&#10095;</span
+                    ><span>&#10095;</span></a
+                  >
+                </div>
+                <div class="linkBox" id="link2">
+                  <a href="portfolio.html#logoLink"
+                    >Logo <span>&#10095;</span><span>&#10095;</span
+                    ><span>&#10095;</span></a
+                  >
+                </div>
+                <div class="linkBox" id="link3">
+                  <a href="portfolio.html#printLink"
+                    >Print <span>&#10095;</span><span>&#10095;</span
+                    ><span>&#10095;</span></a
+                  >
+                </div>
+              </div>
+            </li>
             <li id="Contact"><a href="contact.html">CONTACT</a></li>
-            <a class="arrow1" title="Retour haut de page" href="#top"
-              ><img
-                src="./assets/images/arrows/arrowRetourHpin.png"
-                alt="Flèche retour haut de page"
-            /></a>
           </ul>
         </nav>
       </div>
@@ -57,17 +84,58 @@
         <li id="accueil2">
           <a href="index.html">Accueil</a>
         </li>
+        <div class="linksBox2">
+          <div class="linkBox2" id="sideBarLink1">
+            <a href="index.html#visIdLink"
+              >Identité Visuelle <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink2">
+            <a href="index.html#logoLink"
+              >Logo <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink3">
+            <a href="index.html#charteLink"
+              >Charte Graphique <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink4">
+            <a href="index.html#webLink"
+              >Site Internet <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+        </div>
         <li id="portfolio2">
           <a href="portfolio.html">Portfolio</a>
         </li>
+        <div class="linksBox2">
+          <div class="linkBox2" id="sideBarLink1">
+            <a href="portfolio.html#webLink"
+              >Site Internet <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink2">
+            <a href="portfolio.html#logoLink"
+              >Logo <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink3">
+            <a href="portfolio.html#printLink"
+              >Print <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+        </div>
         <li id="contact2">
           <a href="contact.html">Contact</a>
         </li>
-        <a class="arrow2" href="#top"
-          ><img
-            src="./assets/images/arrows/arrowRetourHpin.png"
-            alt="Flèche retour haut de page"
-        /></a>
       </ul>
     </div>
     <div class="arrow3">
@@ -91,36 +159,11 @@
           <div class="puzzleImg" id="bottomRight"></div>
           <div class="puzzleImg" id="middle"></div>
         </div>
-        <div class="linksBox">
-          <div class="linkBox" id="link1">
-            <a href="portfolio.html#webLink"
-              >Site Internet <span>&#10095;</span><span>&#10095;</span
-              ><span>&#10095;</span></a
-            >
-          </div>
-          <div class="linkBox" id="link2">
-            <a href="portfolio.html#logoLink"
-              >Logo <span>&#10095;</span><span>&#10095;</span
-              ><span>&#10095;</span></a
-            >
-          </div>
-          <div class="linkBox" id="link3">
-            <a href="portfolio.html#charteLink"
-              >Charte Graphique <span>&#10095;</span><span>&#10095;</span
-              ><span>&#10095;</span></a
-            >
-          </div>
-          <div class="linkBox" id="link4">
-            <a href="portfolio.html#cvLink"
-              >Cartes de Visite <span>&#10095;</span><span>&#10095;</span
-              ><span>&#10095;</span>
-            </a>
-          </div>
-        </div>
       </div>
+      <div id="webLink"></div>
       <div class="boxContainer">
-        <h2 id="webLink" style="color: var(--color5)">Site Internet</h2>
-        <span id="clicCard">Cliquez sur les cartes !</span>
+        <h2 style="color: var(--color5)">Site Internet</h2>
+        <span id="clicCard">Cliquez !</span>
         <div class="box" id="web">
           <div class="web" id="web01"></div>
           <div class="web" id="web02"></div>
@@ -130,10 +173,10 @@
           <div class="web" id="web06"></div>
         </div>
       </div>
-
+      <div id="logoLink"></div>
       <div class="boxContainer">
-        <h2 id="logoLink" style="color: var(--color8)">Logo</h2>
-        <span id="clicCard">Cliquez sur les cartes !</span>
+        <h2 style="color: var(--color8)">Logo</h2>
+        <span id="clicCard">Cliquez !</span>
         <div class="box" id="logo">
           <div class="logo" id="log01"></div>
           <div class="logo" id="log02"></div>
@@ -144,21 +187,11 @@
           <div class="logo" id="log07"></div>
         </div>
       </div>
-
+      <div id="printLink"></div>
       <div class="boxContainer">
-        <h2 id="charteLink" style="color: var(--color4)">Charte Graphique</h2>
+        <h2 style="color: var(--color7)">Print</h2>
         <span id="clicCard">Cliquez sur les cartes !</span>
-        <div class="box" id="charte">
-          <div class="charte" id="ch01"></div>
-          <div class="charte" id="ch02"></div>
-          <div class="charte" id="ch03"></div>
-        </div>
-      </div>
-
-      <div class="boxContainer">
-        <h2 id="cvLink" style="color: var(--color7)">Cartes de visite</h2>
-        <span id="clicCard">Cliquez sur les cartes !</span>
-        <div class="box" id="cv">
+        <div class="box" id="print">
           <div id="cv00">
             <div class="cv" id="cv01"></div>
             <div class="cv" id="cv02"></div>
@@ -176,31 +209,48 @@
     </div>
 
     <footer>
-      <div class="reseaux1">
-        <a
-          id="fb"
-          href="https://fr-fr.facebook.com/"
-          title="Facebook"
-          target="_blank"
-        ></a>
-        <a
-          id="linkedin"
-          href="https://fr.linkedin.com/"
-          title="LinkedIn"
-          target="_blank"
-        ></a>
-        <a
-          id="tw"
-          href="https://twitter.com/?lang=fr"
-          title="x (twitter)"
-          target="_blank"
-        ></a>
-        <a
-          id="insta"
-          href="https://www.instagram.com/"
-          title="instagram"
-          target="_blank"
-        ></a>
+      <div class="cgvmlReseauxBox">
+        <div class="cgvmlBox">
+          <div class="cgvmlLink2">
+            <a href="contact.html">Me contacter</a>
+          </div>
+          <div class="cgvmlLink2">
+            <a href="mentionsLegales.html">Mentions légales</a>
+          </div>
+          <div class="cgvmlLink2">
+            <a href="cgv.html">Conditions générales de vente</a>
+          </div>
+        </div>
+
+        <div class="reseaux1">
+          <a
+            id="fb"
+            href="https://fr-fr.facebook.com/"
+            title="Facebook"
+            target="_blank"
+          ></a>
+          <a
+            id="linkedin"
+            href="https://fr.linkedin.com/"
+            title="LinkedIn"
+            target="_blank"
+          ></a>
+          <a
+            id="tw"
+            href="https://twitter.com/?lang=fr"
+            title="x (twitter)"
+            target="_blank"
+          ></a>
+          <a
+            id="insta"
+            href="https://www.instagram.com/"
+            title="instagram"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+      <div class="copyright">
+        &#169; 2023 - Graphysalis - Tous droits réservés
       </div>
     </footer>
     <script src="script.js"></script>
