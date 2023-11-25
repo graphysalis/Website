@@ -3,6 +3,7 @@ const sideBar = document.querySelector("#side-bar");
 const content = document.querySelector(".content");
 const arrow3 = document.querySelector(".arrow3");
 const linksBox = document.querySelector(".linksBox");
+const linkBox2 = document.querySelectorAll(".linkBox2");
 
 // au scroll > 70 => sideBar/menu position top 0
 window.addEventListener("scroll", () => {
@@ -21,6 +22,12 @@ window.addEventListener("scroll", () => {
 btn.addEventListener("click", () => {
   sideBar.classList.toggle("active");
   btn.classList.toggle("cross");
+});
+
+linkBox2.forEach((link) => {
+  link.addEventListener("click", () => {
+    sideBar.classList.remove("active");
+  });
 });
 
 content.addEventListener("click", () => {
