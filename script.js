@@ -27,6 +27,7 @@ btn.addEventListener("click", () => {
 linkBox2.forEach((link) => {
   link.addEventListener("click", () => {
     sideBar.classList.remove("active");
+    btn.classList.remove("cross");
   });
 });
 
