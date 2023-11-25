@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <title>GRAPHYSALIS | Webdesigner/Développeur | Contact</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graphysalis- Contact</title>
+    <meta
+      name="keywords"
+      content="devis webdesigner, devis site web, devis logo, devis print, devis illustration, devis packaging, devis realisations graphiques, devis développeur web"
+    />
+    <meta
+      name="description"
+      content="Besoin des services d'un webdesigner? N'hésitez pas à me contacter pour tout renseignement et concrétisez votre projet web ou print!"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -43,11 +52,6 @@
             <li id="accueil"><a href="index.html">ACCUEIL</a></li>
             <li id="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
             <li id="contact"><a href="contact.html">CONTACT</a></li>
-            <a class="arrow1" title="Retour haut de page" href="#top"
-              ><img
-                src="./assets/images/arrows/arrowRetourHpin.png"
-                alt="Flèche retour haut de page"
-            /></a>
           </ul>
         </nav>
       </div>
@@ -57,17 +61,58 @@
         <li id="accueil2">
           <a href="index.html">Accueil</a>
         </li>
+        <div class="linksBox2">
+          <div class="linkBox2" id="sideBarLink1">
+            <a href="index.html#visIdLink"
+              >Identité Visuelle <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink2">
+            <a href="index.html#logoLink"
+              >Logo <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink3">
+            <a href="index.html#charteLink"
+              >Charte Graphique <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink4">
+            <a href="index.html#webLink"
+              >Site Internet <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+        </div>
         <li id="portfolio2">
           <a href="portfolio.html">Portfolio</a>
         </li>
+        <div class="linksBox2">
+          <div class="linkBox2" id="sideBarLink1">
+            <a href="portfolio.html#webLink"
+              >Site Internet <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink2">
+            <a href="portfolio.html#logoLink"
+              >Logo <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+          <div class="linkBox2" id="sideBarLink3">
+            <a href="portfolio.html#printLink"
+              >Print <span>&#10095;</span><span>&#10095;</span
+              ><span>&#10095;</span></a
+            >
+          </div>
+        </div>
         <li id="contact2">
           <a href="contact.html">Contact</a>
         </li>
-        <a class="arrow2" href="#top"
-          ><img
-            src="./assets/images/arrows/arrowRetourHpin.png"
-            alt="Flèche retour haut de page"
-        /></a>
       </ul>
     </div>
     <div class="arrow3">
@@ -78,33 +123,103 @@
         /><span>Retour haut de page</span></a
       >
     </div>
-    <div class="content"></div>
+    <div class="content">
+      <div id="contactBox">
+        <h1>Graphysalis, à votre écoute pour vos projets web et print.</h1>
+        <div class="formulaire">
+          <div class="contactez-moi">
+            <p>
+              <span>Une question ?</span><br />
+              N’hésitez pas à utiliser ce formulaire pour tout renseignement
+              !<br />
+              Je vous répondrai dans les plus brefs délais...
+            </p>
+            <form action="/page-traitement-data" method="post">
+              <div>
+                <label for="nom">Votre nom</label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Martin"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Votre e-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="monadresse@mail.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="message">Votre message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Bonjour, je vous contacte pour savoir...."
+                  required
+                ></textarea>
+              </div>
+
+              <div>
+                <button type="submit" formaction="celjeamag@gmail.com">
+                  Envoyer!
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
-      <div class="reseaux1">
-        <a
-          id="fb"
-          href="https://fr-fr.facebook.com/"
-          title="Facebook"
-          target="_blank"
-        ></a>
-        <a
-          id="linkedin"
-          href="https://fr.linkedin.com/"
-          title="LinkedIn"
-          target="_blank"
-        ></a>
-        <a
-          id="tw"
-          href="https://twitter.com/?lang=fr"
-          title="x (twitter)"
-          target="_blank"
-        ></a>
-        <a
-          id="insta"
-          href="https://www.instagram.com/"
-          title="instagram"
-          target="_blank"
-        ></a>
+      <div class="cgvmlReseauxBox">
+        <div class="cgvmlBox">
+          <div class="cgvmlLink2">
+            <a href="contact.html">Me contacter</a>
+          </div>
+          <div class="cgvmlLink2">
+            <a href="mentionsLegales.html">Mentions légales</a>
+          </div>
+          <div class="cgvmlLink2">
+            <a href="cgv.html">Conditions générales de vente</a>
+          </div>
+        </div>
+
+        <div class="reseaux1">
+          <a
+            id="fb"
+            href="https://fr-fr.facebook.com/"
+            title="Facebook"
+            target="_blank"
+          ></a>
+          <a
+            id="linkedin"
+            href="https://fr.linkedin.com/"
+            title="LinkedIn"
+            target="_blank"
+          ></a>
+          <a
+            id="tw"
+            href="https://twitter.com/?lang=fr"
+            title="x (twitter)"
+            target="_blank"
+          ></a>
+          <a
+            id="insta"
+            href="https://www.instagram.com/"
+            title="instagram"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+      <div class="copyright">
+        &#169; 2023 - Graphysalis - Tous droits réservés
       </div>
     </footer>
     <script src="script.js"></script>
