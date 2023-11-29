@@ -76,10 +76,10 @@ window.addEventListener("scroll", () => {
 /**********  défilement img #web *****/
 var images = new Array();
 images = [
-  "./assets/images/website/01.png",
-  "./assets/images/website/02.png",
-  "./assets/images/website/03.png",
-  "./assets/images/website/04.png",
+  "./assets/images/website/01.webp",
+  "./assets/images/website/02.webp",
+  "./assets/images/website/03.webp",
+  "./assets/images/website/04.webp",
 ];
 const pauseDefile = document.querySelector(".pauseDefile");
 const playDefile = document.querySelector(".playDefile");
