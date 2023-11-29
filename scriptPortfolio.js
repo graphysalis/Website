@@ -5,7 +5,7 @@ const puzzle = document.querySelector(".puzzleImg");
 
 setTimeout(() => {
   document.body.style.backgroundImage =
-    "url(./assets/images/background/background1b.png)";
+    "url(./assets/images/background/background1b.webp)";
   document.body.style.backgroundSize = "cover";
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundAttachment = "fixed";
