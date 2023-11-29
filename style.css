@@ -39,7 +39,7 @@ body {
   font-weight: bolder;
   min-height: 100vh;
   color: var(--color1);
-  background-image: url(./assets/images/background/background1b.png);
+  background-image: url(./assets/images/background/background1b.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -50,7 +50,7 @@ body {
 }
 
 .banner {
-  background-image: url(./assets/images/banner/B41a.png);
+  background-image: url(./assets/images/banner/B41a.webp);
   background-position: center;
   background-size: cover;
   height: 54px;
@@ -342,55 +342,55 @@ footer {
 }
 
 #fb {
-  background-image: url("./assets/images/logos/logo-fb.png");
+  background-image: url("./assets/images/logos/logo-fb.webp");
 }
 #fb:hover {
-  background-image: url("./assets/images/logos/logo-fb2.png");
+  background-image: url("./assets/images/logos/logo-fb2.webp");
 }
 #linkedin {
-  background-image: url("./assets/images/logos/logo-linkedin.png");
+  background-image: url("./assets/images/logos/logo-linkedin.webp");
 }
 #linkedin:hover {
-  background-image: url("./assets/images/logos/logo-linkedin2.png");
+  background-image: url("./assets/images/logos/logo-linkedin2.webp");
 }
 #tw {
-  background-image: url("./assets/images/logos/logo-twitter.png");
+  background-image: url("./assets/images/logos/logo-twitter.webp");
 }
 #tw:hover {
-  background-image: url("./assets/images/logos/logo-twitter2.png");
+  background-image: url("./assets/images/logos/logo-twitter2.webp");
 }
 
 #insta {
-  background-image: url("./assets/images/logos/logo-insta.png");
+  background-image: url("./assets/images/logos/logo-insta.webp");
 }
 #insta:hover {
-  background-image: url("./assets/images/logos/logo-insta2.png");
+  background-image: url("./assets/images/logos/logo-insta2.webp");
 }
 
 #fb2 {
-  background-image: url("./assets/images/logos/logo-fb3.png");
+  background-image: url("./assets/images/logos/logo-fb3.webp");
 }
 #fb2:hover {
-  background-image: url("./assets/images/logos/logo-fb4.png");
+  background-image: url("./assets/images/logos/logo-fb4.webp");
 }
 #linkedin2 {
-  background-image: url("./assets/images/logos/logo-linkedin3.png");
+  background-image: url("./assets/images/logos/logo-linkedin3.webp");
 }
 #linkedin2:hover {
-  background-image: url("./assets/images/logos/logo-linkedin4.png");
+  background-image: url("./assets/images/logos/logo-linkedin4.webp");
 }
 #tw2 {
-  background-image: url("./assets/images/logos/logo-twitter3.png");
+  background-image: url("./assets/images/logos/logo-twitter3.webp");
 }
 #tw2:hover {
-  background-image: url("./assets/images/logos/logo-twitter4.png");
+  background-image: url("./assets/images/logos/logo-twitter4.webp");
 }
 
 #insta2 {
-  background-image: url("./assets/images/logos/logo-insta3.png");
+  background-image: url("./assets/images/logos/logo-insta3.webp");
 }
 #insta2:hover {
-  background-image: url("./assets/images/logos/logo-insta4.png");
+  background-image: url("./assets/images/logos/logo-insta4.webp");
 }
 
 .copyright {
